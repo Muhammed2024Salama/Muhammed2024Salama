@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Muhammed Salama</h1>
-<h3 align="center"><i>Full Stack Web Developer</i></h3>
+<h3 align="center"><i>Back End Web Developer</i></h3>
 
 - 🌱 I’m currently learning **Algorithms**
 
