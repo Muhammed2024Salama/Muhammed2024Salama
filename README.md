@@ -12,6 +12,7 @@
 [![Pusher](https://img.shields.io/badge/-Pusher-010101?style=flat&logo=pusher&logoColor=white)](https://pusher.com/)
 [![WebSockets](https://img.shields.io/badge/-WebSockets-6DB33F?style=flat&logo=socket.io&logoColor=white)](https://laravel.com/docs/websockets)
 [![Real-Time](https://img.shields.io/badge/-Real--Time-FFD700?style=flat&logo=lightning&logoColor=black)](#)
+[![Broadcasting](https://img.shields.io/badge/-Broadcasting-8E44AD?style=flat&logo=laravel&logoColor=white)](https://laravel.com/docs/broadcasting)
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=MuhammedSalama.MuhammedSalama)
 
 ---
@@ -27,7 +28,7 @@
 - 🔧 **Backend:** PHP 8.3, Laravel 10/11, MySQL, RESTful APIs  
 - 🌐 **Frontend:** HTML5, CSS3, JavaScript (Vanilla), Blade Templates  
 - ⚙️ **Tools & DevOps:** Git, GitHub, Postman, Composer, npm, Ubuntu, Linux, Bash, Docker  
-- ⚡ **Real-Time:** WebSockets, Pusher, Laravel Echo  
+- ⚡ **Real-Time:** WebSockets, Pusher, Laravel Echo, **Broadcasting**  
 - 🔐 **Auth & Security:** Laravel Sanctum, hashed tokens, role/permission systems  
 - 🧪 **Testing & Validation:** Laravel Form Requests, PHPUnit (basic), custom validation  
 - 📦 **Package Integration:** Stripe, PayPal, Razorpay, Redis, Cash on Delivery  
@@ -36,7 +37,7 @@
 
 ## 🚧 What I'm Working On
 
-- 🛒 Multi-vendor eCommerce project (real-time updates with WebSockets & Pusher)  
+- 🛒 Multi-vendor eCommerce project (real-time updates with WebSockets, Broadcasting & Pusher)  
 - 📲 Mobile & Web Authentication using Laravel Sanctum  
 - 🔁 Repository-Service pattern with clean architecture  
 - 🧠 Always learning & improving Laravel practices and modern PHP  
@@ -55,15 +56,14 @@
 
 - 📧 Email: [devmuhammedsalama@gmail.com](mailto:devmuhammedsalama@gmail.com)  
 - 💼 [LinkedIn](https://www.linkedin.com/in/mohamed2050) *(Feel free to connect!)*  
-- 🌐 Portfolio: *(Coming soon...)*
+- 🌐 Portfolio: *(Coming soon...)*  
 
 ---
 
 ## 📊 GitHub Stats & Most Used Languages
 
-![Muhammed's GitHub Stats](https://github-readme-stats.vercel.app/api?username=MuhammedSalama&show_icons=true&theme=radical&hide_title=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammedSalama&layout=compact&theme=radical)
+![Muhammed's GitHub Stats](https://github-readme-stats.vercel.app/api?username=MuhammedSalama&show_icons=true&theme=radical&hide_title=true)  
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammedSalama&layout=compact&theme=radical)  
 
 ---
 
