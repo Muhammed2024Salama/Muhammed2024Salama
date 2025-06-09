@@ -34,7 +34,7 @@ I am a passionate **Mid-level PHP & Laravel Developer** based in Egypt, actively
 
 ## 🚀 Extended Description
 
-With over 2+ years of professional experience, I excel at developing robust PHP applications using Laravel framework, emphasizing code quality and architecture. My expertise includes designing and implementing RESTful APIs, real-time functionalities using Laravel WebSockets, Pusher, and Broadcasting events to deliver highly interactive user experiences.
+With over 3+ years of professional experience, I excel at developing robust PHP applications using Laravel framework, emphasizing code quality and architecture. My expertise includes designing and implementing RESTful APIs, real-time functionalities using Laravel WebSockets, Pusher, and Broadcasting events to deliver highly interactive user experiences.
 
 I have hands-on experience integrating various payment gateways including Stripe, PayPal, and Razorpay, building secure authentication systems with Laravel Sanctum, and automating workflows using Docker in Linux environments.
 
