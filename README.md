@@ -11,10 +11,13 @@
 [![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Pusher](https://img.shields.io/badge/-Pusher-010101?style=flat&logo=pusher&logoColor=white)](https://pusher.com/)
 [![WebSockets](https://img.shields.io/badge/-WebSockets-6DB33F?style=flat&logo=socket.io&logoColor=white)](https://laravel.com/docs/websockets)
-[![Real-Time](https://img.shields.io/badge/-Real--Time-FFD700?style=flat&logo=lightning&logoColor=black)](#)
 [![Broadcasting](https://img.shields.io/badge/-Broadcasting-8E44AD?style=flat&logo=laravel&logoColor=white)](https://laravel.com/docs/broadcasting)
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=MuhammedSalama.MuhammedSalama)
+[![Real-Time](https://img.shields.io/badge/-Real--Time-FFD700?style=flat&logo=lightning&logoColor=black)](#)
+[![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+[![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=MuhammedSalama.MuhammedSalama)
 ---
 
 🎓 A passionate **PHP & Laravel Developer**  
