@@ -22,8 +22,7 @@
 [![Yajra DataTables](https://img.shields.io/badge/-Yajra%20DataTables-003B57?style=flat&logo=laravel&logoColor=white)](https://yajrabox.com/docs/laravel-datatables/master/installation)
 [![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=white)](https://firebase.google.com/)
 
-
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=MuhammedSalama.MuhammedSalama)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Muhammed2024Salama.Muhammed2024Salama)
 
 ---
 
@@ -78,22 +77,25 @@ Collaboration and clear communication are essential values in my workflow, wheth
 
 ## 📫 Let's Connect
 
-- Email: [devmuhammedsalama@gmail.com](mailto:devmuhammedsalama@gmail.com)  
-- LinkedIn: [linkedin.com/in/mohamed2050](https://www.linkedin.com/in/mohamed2050)  
+[![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:devmuhammedsalama@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohamed2050)
+[![Upwork](https://img.shields.io/badge/-Upwork-6fda44?style=flat&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~0182dd45bb78cc6fc1)
+
 - Portfolio: *(Coming soon)*  
+
 
 ---
 
 ## 📊 GitHub Stats & Languages
 
-![Muhammed's GitHub Stats](https://github-readme-stats.vercel.app/api?username=MuhammedSalama&show_icons=true&theme=radical&hide_title=true)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammedSalama&layout=compact&theme=radical)  
+![Muhammed's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Muhammed2024Salama&show_icons=true&theme=radical&hide_title=true)  
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Muhammed2024Salama&layout=compact&theme=radical)
 
 ---
 
 ## 🔥 GitHub Contribution Streak
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=MuhammedSalama&theme=radical)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=Muhammed2024Salama&theme=radical)](https://git.io/streak-stats)
 
 ---
 
