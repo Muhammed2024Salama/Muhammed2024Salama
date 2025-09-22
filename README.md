@@ -21,6 +21,7 @@
 [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Yajra DataTables](https://img.shields.io/badge/-Yajra%20DataTables-003B57?style=flat&logo=laravel&logoColor=white)](https://yajrabox.com/docs/laravel-datatables/master/installation)
 [![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=white)](https://firebase.google.com/)
+[![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Muhammed2024Salama.Muhammed2024Salama)
 
