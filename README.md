@@ -49,7 +49,7 @@ Collaboration and clear communication are essential values in my workflow, wheth
 
 - **Backend:** PHP 8.3, Laravel 10/11, RESTful APIs, Repository-Service Pattern  
 - **Frontend:** HTML5, CSS3, JavaScript (Vanilla), Blade Templates  
-- **Database:** MySQL, Database Design, Redis  
+- **Database:** MySQL, PostgreSQL, Database Design, Redis  
 - **Real-Time:** Laravel WebSockets, Pusher, Broadcasting, Laravel Echo  
 - **Authentication & Security:** Laravel Sanctum, Role & Permission Management  
 - **Testing & Validation:** Laravel Form Requests, PHPUnit (Unit Testing), Custom Validation  
