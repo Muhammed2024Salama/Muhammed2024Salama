@@ -29,7 +29,7 @@
 
 ## 🎓 About Me
 
-I am a passionate **Mid-level PHP & Laravel Developer** based in Egypt, actively open to remote and hybrid opportunities. I specialize in building scalable, secure, and maintainable web applications, focusing on clean code, modern best practices, and continuous learning.
+I am a passionate **Mid-senior PHP & Laravel Developer** based in Egypt, actively open to remote and hybrid opportunities. I specialize in building scalable, secure, and maintainable web applications, focusing on clean code, modern best practices, and continuous learning.
 
 ---
 
@@ -65,6 +65,27 @@ Collaboration and clear communication are essential values in my workflow, wheth
 - Mobile and web authentication systems leveraging Laravel Sanctum  
 - Clean architecture with Repository-Service pattern for scalable and maintainable codebases  
 - Continuous learning and applying modern PHP and Laravel best practices  
+
+---
+
+## 🚀 Live Projects
+
+### [![Live](https://img.shields.io/badge/Website-Live-success?style=flat&logo=vercel&logoColor=white)](https://exspeeds.com/)
+**Front-end (Client):** [exspeeds.com](https://exspeeds.com/)  
+**Backend (API):** [api.exspeeds.com](https://api.exspeeds.com/)
+
+---
+
+### [![Live](https://img.shields.io/badge/Website-Live-success?style=flat&logo=laravel&logoColor=white)](https://drosat.com)
+**Project:** [drosat.com](https://drosat.com)  
+**Description:** A Laravel-based platform offering digital solutions and eCommerce services.
+
+---
+
+### [![Live](https://img.shields.io/badge/Dashboard-Live-blue?style=flat&logo=laravel&logoColor=white)](https://dashboard.p-adviser.com)
+**Admin Dashboard:** [dashboard.p-adviser.com](https://dashboard.p-adviser.com)  
+**Frontend Website:** [p-adviser.com](https://p-adviser.com)  
+**Description:** Business advisory platform with separate dashboard and client interface built using Laravel, Sanctum authentication, and REST APIs.
 
 ---
 
