@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Muhammed Salama
+# 👋 Hi, I'm Muhammed Salama — PHP & Laravel Developer
 
 [![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)](https://laravel.com/)
 [![Laravel Unit Testing](https://img.shields.io/badge/-Laravel%20Unit%20Testing-6C3FA6?style=flat&logo=laravel&logoColor=white)](https://laravel.com/docs/testing)
@@ -30,6 +30,7 @@
 ## 🎓 About Me
 
 I am a passionate **Mid-senior PHP & Laravel Developer** based in Egypt, actively open to remote and hybrid opportunities. I specialize in building scalable, secure, and maintainable web applications, focusing on clean code, modern best practices, and continuous learning.
+If you're looking for a developer who combines technical depth with strong collaboration and problem-solving skills — let's connect!
 
 ---
 
@@ -74,6 +75,7 @@ Collaboration and clear communication are essential values in my workflow, wheth
 **Front-end (Client):** [exspeeds.com](https://exspeeds.com/)  
 **Backend (API):** [api.exspeeds.com](https://api.exspeeds.com/)  
 💼 This project was developed as a **Freelance** work.
+🧩 **Description:** A complete logistics platform built with Laravel, RESTful APIs, and Pusher for real-time updates.
 
 ---
 
@@ -84,9 +86,44 @@ Collaboration and clear communication are essential values in my workflow, wheth
 ---
 
 ### [![Live](https://img.shields.io/badge/Dashboard-Live-blue?style=flat&logo=laravel&logoColor=white)](https://dashboard.p-adviser.com)
+**Company:** [Elite BRICKS Real Estate Brokers LLC.](https://p-adviser.com) · Full-time  
+**Role:** Backend Developer (Laravel 11 - API Development)  
+**Type:** Company Project  
 **Admin Dashboard:** [dashboard.p-adviser.com](https://dashboard.p-adviser.com)  
 **Frontend Website:** [p-adviser.com](https://p-adviser.com)  
-**Description:** Business advisory platform with separate dashboard and client interface built using Laravel, Sanctum authentication, and REST APIs.
+
+#### 💼 Key Contributions & Achievements
+
+🔧 **Backend Architecture**  
+Led the architecture of a scalable **Laravel 11** backend using a custom **Repository-Service pattern** with automated Artisan commands (`make:interface`, `make:repository`, `make:service`).  
+This reduced boilerplate by **40%**, streamlined development workflows, and improved maintainability.
+
+💬 **Real-Time Chat System**  
+Developed a **secure, real-time messaging system** using **Laravel Echo**, **WebSockets**, and **Pusher**, featuring:  
+- Dynamic private channels (`private-chat-{minUserID}-{maxUserID}`)  
+- Read receipts, file attachments, and paginated chat history  
+- Achieved **<500ms broadcast latency** through optimized payloads  
+
+🧩 **Database Design & Optimization**  
+Designed a **relational schema** with 15+ entities and 50+ migrations using enums and foreign keys.  
+Implemented **activity logging** via model events to monitor CRUD operations.
+
+📥 **Excel Import/Export Automation**  
+Built a **data import/export module** using **Laravel Excel 3.1**, handling 10K+ records with strict validation (regex, enums, foreign keys).  
+This automation saved over **25 hours/month** of manual data processing.
+
+♻️ **Reusable Infrastructure Components**  
+Developed modular components reused across 80+ endpoints:  
+- `ResponseHelper` for standardized API responses  
+- `ImageUploadTrait` for image processing and **S3** integration  
+
+🛠️ **Tech Stack**  
+`PHP 8.3`, `Laravel 11`, `MySQL 8`, `Redis`, `Pusher`, `WebSockets`, `REST API`, `Eloquent ORM`, `Docker`, `Git`, `Ubuntu`
+
+🏆 **Highlighted Features**  
+- **Real-Time Chat Platform** → Reduced internal communication time by 30%  
+- **Bulk Property Import Engine** → Supported 5,000+ DLD-compliant property imports  
+- **Unified API Backend** → Consolidated 3 legacy systems into a single Laravel backend with full Postman test coverage
 
 ---
 
@@ -104,8 +141,7 @@ Collaboration and clear communication are essential values in my workflow, wheth
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohamed2050)
 [![Upwork](https://img.shields.io/badge/-Upwork-6fda44?style=flat&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~0182dd45bb78cc6fc1)
 
-- Portfolio: *(Coming soon)*  
-
+🧠 Portfolio: Currently under development — stay tuned for the launch!
 
 ---
 
