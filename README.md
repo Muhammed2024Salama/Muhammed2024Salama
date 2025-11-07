@@ -72,7 +72,8 @@ Collaboration and clear communication are essential values in my workflow, wheth
 
 ### [![Live](https://img.shields.io/badge/Website-Live-success?style=flat&logo=vercel&logoColor=white)](https://exspeeds.com/)
 **Front-end (Client):** [exspeeds.com](https://exspeeds.com/)  
-**Backend (API):** [api.exspeeds.com](https://api.exspeeds.com/)
+**Backend (API):** [api.exspeeds.com](https://api.exspeeds.com/)  
+💼 This project was developed as a **Freelance** work.
 
 ---
 
