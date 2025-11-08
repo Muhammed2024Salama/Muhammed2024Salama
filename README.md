@@ -94,6 +94,20 @@ Collaboration and clear communication are essential values in my workflow, wheth
 
 #### 💼 Key Contributions & Achievements
 
+---
+
+## 🧠 Technical Highlights
+
+| Area | Key Achievements |
+|------|------------------|
+| **Backend Architecture** | Built scalable Laravel backend using Repository–Service pattern with custom Artisan generators (reduced boilerplate by 40%) |
+| **Real-Time Communication** | Developed chat system with Pusher + Laravel Echo (500ms latency, read receipts, file attachments) |
+| **Database Design** | Engineered 50+ migrations with foreign keys, enums, and event-driven audit logging |
+| **Data Automation** | Built import/export system handling 10K+ validated records (Laravel Excel 3.1) |
+| **Infrastructure** | Created modular traits (ResponseHelper, ImageUploadTrait), integrated S3 for storage |
+
+---
+
 🔧 **Backend Architecture**  
 Led the architecture of a scalable **Laravel 11** backend using a custom **Repository-Service pattern** with automated Artisan commands (`make:interface`, `make:repository`, `make:service`).  
 This reduced boilerplate by **40%**, streamlined development workflows, and improved maintainability.
