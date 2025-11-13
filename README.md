@@ -80,8 +80,11 @@ Collaboration and clear communication are essential values in my workflow, wheth
 ---
 
 ### [![Live](https://img.shields.io/badge/Website-Live-success?style=flat&logo=laravel&logoColor=white)](https://drosat.com)
+**Company:** [AI TECH](#) · Full-time  
 **Project:** [drosat.com](https://drosat.com)  
-**Description:** A Laravel-based platform offering digital solutions and eCommerce services.
+**Role:** Laravel Developer  
+**Type:** Company Project  
+**Description:** A Laravel-based platform offering digital solutions and eCommerce services, developed as part of the **AI TECH** team.
 
 ---
 
