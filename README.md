@@ -188,8 +188,10 @@ Developed modular components reused across 80+ endpoints:
 
 ---
 
-## ⚙️ GitHub Metrics (Animated Dashboard)
-<img src="https://github.com/Muhammed2024Salama/Muhammed2024Salama/blob/main/github-metrics.svg" width="100%">
+### ⚙️ GitHub Metrics (Dynamic & Hosted)
+
+<img src="https://metrics.lecoq.io/Muhammed2024Salama?template=classic&languages=1&followup=1&isocalendar=1&people=1&repositories=1&achievements=1&introduction=1&base=header%2C activity%2C community%2C repositories&base_hireable=0" width="100%">
+
 
 ---
 
