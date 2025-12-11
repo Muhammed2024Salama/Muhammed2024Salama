@@ -94,6 +94,7 @@ Collaboration and clear communication are essential values in my workflow, wheth
 **Type:** Company Project  
 **Admin Dashboard:** [dashboard.p-adviser.com](https://dashboard.p-adviser.com)  
 **Frontend Website:** [p-adviser.com](https://p-adviser.com)  
+**API Documentation:** [api.p-adviser.com/docs](https://api.p-adviser.com/docs)
 
 #### 💼 Key Contributions & Achievements
 
