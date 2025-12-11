@@ -163,16 +163,33 @@ Developed modular components reused across 80+ endpoints:
 
 ---
 
-## 📊 GitHub Stats & Languages
+## 🚀 GitHub Analytics Dashboard
 
-![Muhammed's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Muhammed2024Salama&show_icons=true&theme=radical&hide_title=true)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Muhammed2024Salama&layout=compact&theme=radical)
+### 📊 Overall GitHub Stats
+![GitHub Stats](https://github-readme-stats-git-masterorg.vercel.app/api?username=Muhammed2024Salama&show_icons=true&theme=radical&hide_title=true&cache_seconds=1800)
+
+### 🧠 Top Languages
+![Top Languages](https://github-readme-stats-git-masterorg.vercel.app/api/top-langs/?username=Muhammed2024Salama&layout=compact&theme=radical&cache_seconds=1800)
 
 ---
 
-## 🔥 GitHub Contribution Streak
+## 🔥 Contribution Streak
+[![GitHub Streak](https://streak-stats.demolab.com?user=Muhammed2024Salama&theme=radical&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=Muhammed2024Salama&theme=radical)](https://git.io/streak-stats)
+---
+
+## 🏆 GitHub Profile Trophy
+![Trophy](https://github-profile-trophy.vercel.app/?username=Muhammed2024Salama&theme=radical&margin-w=10&no-bg=true&no-frame=true)
+
+---
+
+## 📈 GitHub Activity Graph (Dynamic & Animated)
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Muhammed2024Salama&theme=react-dark&hide_border=true&area=true)
+
+---
+
+## ⚙️ GitHub Metrics (Animated Dashboard)
+<img src="https://github.com/Muhammed2024Salama/Muhammed2024Salama/blob/main/github-metrics.svg" width="100%">
 
 ---
 
