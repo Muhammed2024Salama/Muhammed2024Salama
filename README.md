@@ -190,8 +190,12 @@ Developed modular components reused across 80+ endpoints:
 
 ### ⚙️ GitHub Metrics (Dynamic & Hosted)
 
-<img src="https://metrics.lecoq.io/Muhammed2024Salama?template=classic&languages=1&followup=1&isocalendar=1&people=1&repositories=1&achievements=1&introduction=1&base=header%2C activity%2C community%2C repositories&base_hireable=0" width="100%">
+## ⚙️ GitHub Metrics (Live & Dynamic)
 
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Muhammed2024Salama&theme=radical" width="100%">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Muhammed2024Salama&theme=radical" width="49%">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Muhammed2024Salama&theme=radical" width="49%">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Muhammed2024Salama&theme=radical" width="100%">
 
 ---
 
