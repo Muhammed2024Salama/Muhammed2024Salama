@@ -18,47 +18,50 @@
 ## 🎓 About Me
 
 I am a **Mid-Senior PHP & Laravel Developer** based in Egypt, focusing on scalable, secure, and maintainable web applications.  
-I have 3+ years of experience building **RESTful APIs, real-time apps**, and integrating **payment gateways**.
+I have **3+ years of experience** building **RESTful APIs, real-time applications**, and integrating **payment gateways**.
 
 ---
 
-## 🚀 Live Projects
+## 🚀 Major Projects & Platforms
 
-### [Exspeeds.com](https://exspeeds.com/) – Freelance
-- **Backend:** [api.exspeeds.com](https://api.exspeeds.com/)  
-- **Tech:** Laravel, Pusher, REST API  
-- **Highlights:** Real-time logistics platform with interactive dashboards.
+### 🧱 Live & Production Systems
 
-### [Drosat.com](https://drosat.com) – Company Project (AI TECH)
-- **Role:** Laravel Developer  
-- **Tech:** Laravel, Blade, REST API  
-- **Description:** Digital solutions and eCommerce platform.
+| Project | Description | Tech |
+|------|------------|------|
+| **Exspeeds Platform (Live)** | Real-time logistics platform with interactive dashboards and live order tracking | Laravel · REST APIs · Pusher · WebSockets |
+| **Drosat Platform (Live)** | Digital services and e-commerce platform built for performance and maintainability | Laravel · Blade · REST APIs |
+| **Elite BRICKS Dashboard (Live)** | Enterprise-grade admin dashboard using clean architecture and secure APIs | Laravel 11 · Repository-Service Pattern · Real-Time Events |
 
-### [Elite BRICKS – Dashboard](https://dashboard.p-adviser.com) – Company Project
-- **Role:** Backend Developer (Laravel 11)  
-- **Frontend:** [p-adviser.com](https://p-adviser.com)  
-- **API Docs:** [api.p-adviser.com/docs](https://api.p-adviser.com/docs)  
-- **Highlights:** Repository-Service pattern, real-time updates, secure APIs.
+---
+
+### 🔗 Project Links
+
+- **Exspeeds Frontend:** https://exspeeds.com/login  
+- **Exspeeds Backend:** https://api.exspeeds.com  
+- **Drosat Frontend:** https://drosat.com/  
+- **Elite BRICKS Frontend:** https://p-adviser.com  
+- **Elite BRICKS API Docs:** https://api.p-adviser.com/docs  
 
 ---
 
 ## 🧠 Key Skills & Achievements
 
-- **Backend Architecture:** Scalable Laravel backend using Repository-Service pattern  
-- **Real-Time Apps:** Chat & notifications with Pusher, Laravel Echo (<500ms latency)  
-- **Database Design:** 50+ migrations, enums, foreign keys, audit logging  
-- **Data Automation:** Import/export 10K+ records (Laravel Excel)  
-- **Reusable Components:** Traits like `ResponseHelper`, `ImageUploadTrait`, S3 integration  
+- **Backend Architecture:** Scalable Laravel applications using Repository–Service pattern  
+- **Real-Time Systems:** Live notifications & updates with Pusher and Laravel Echo (<500ms latency)  
+- **Database Design:** 50+ migrations, enums, indexing, foreign keys, audit logging  
+- **Data Automation:** Import/export of 10K+ records using Laravel Excel  
+- **Reusable Components:** Shared Traits (`ResponseHelper`, `ImageUploadTrait`), S3 & cloud storage integration  
 
 ---
 
 ### 📈 Activity Graph
+
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Muhammed2024Salama&theme=react-dark&hide_border=true&area=true)
 
 ---
 
 ## 📫 Contact Me
 
-[![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:devmuhammedsalama@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohamed2050)
+[![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:devmuhammedsalama@gmail.com)&nbsp;
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohamed2050)&nbsp;
 [![Upwork](https://img.shields.io/badge/-Upwork-6fda44?style=flat&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~0182dd45bb78cc6fc1)
