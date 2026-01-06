@@ -41,7 +41,7 @@ I have **3+ years of experience** building **RESTful APIs, real-time application
 - **Drosat Frontend:** https://drosat.com/  
 - **Elite BRICKS Frontend:** https://p-adviser.com  
 - **Elite BRICKS API Docs:** https://api.p-adviser.com/docs  
-
+- **Elite BRICKS API:** https://demoapi.p-adviser.com/api  
 ---
 
 ## 🧠 Key Skills & Achievements
