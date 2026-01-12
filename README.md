@@ -15,13 +15,6 @@
 
 ---
 
-## 🎓 About Me
-
-I am a **Mid-Senior PHP & Laravel Developer** based in Egypt, focusing on scalable, secure, and maintainable web applications.  
-I have **3+ years of experience** building **RESTful APIs, real-time applications**, and integrating **payment gateways**.
-
----
-
 ## 🚀 Major Projects & Platforms
 
 ### 🧱 Live & Production Systems
