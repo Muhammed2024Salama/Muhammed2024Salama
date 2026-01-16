@@ -1,4 +1,6 @@
-# 👋 Hi, I'm Muhammed Salama — PHP & Laravel Developer
+# 👋 Hi, I'm Muhammed Salama — Laravel Backend Engineer
+
+> Building scalable Laravel systems, real-time applications, and clean backend architectures.
 
 [![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)](https://laravel.com/)
 [![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat&logo=php&logoColor=white)](https://www.php.net/)
@@ -12,6 +14,7 @@
 [![Pusher](https://img.shields.io/badge/-Pusher-010101?style=flat&logo=pusher&logoColor=white)](https://pusher.com/)
 [![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=white)](https://firebase.google.com/)
 [![Yajra DataTables](https://img.shields.io/badge/-Yajra%20DataTables-003B57?style=flat&logo=laravel&logoColor=white)](https://yajrabox.com/docs/laravel-datatables/master/installation)
+[![Codewars](https://img.shields.io/badge/-Codewars-B1361E?style=flat&logo=codewars&logoColor=white)](https://www.codewars.com/users/Muhammed%20Salama)
 
 ---
 
@@ -39,7 +42,8 @@
 
 ## 🧠 Key Skills & Achievements
 
-- **Backend Architecture:** Scalable Laravel applications using Repository–Service pattern  
+- **Backend Architecture:** Designing scalable Laravel systems using Repository–Service and clean architecture principles  
+- **API Development:** Secure REST APIs with authentication, validation, and role-based access control  
 - **Real-Time Systems:** Live notifications & updates with Pusher and Laravel Echo (<500ms latency)  
 - **Database Design:** 50+ migrations, enums, indexing, foreign keys, audit logging  
 - **Data Automation:** Import/export of 10K+ records using Laravel Excel  
@@ -52,6 +56,13 @@
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Muhammed2024Salama&theme=react-dark&hide_border=true&area=true)
 
 ---
+
+## 🧩 Competitive Programming
+
+- 🥋 **Codewars:**  
+  Solving algorithmic and logical challenges to strengthen problem-solving skills  
+  🔗 https://www.codewars.com/users/Muhammed%20Salama
+
 
 ## 📫 Contact Me
 
