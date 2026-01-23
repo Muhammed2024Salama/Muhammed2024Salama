@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Muhammed Salama — Laravel Backend Engineer
 
-> Building scalable Laravel systems, real-time applications, and clean backend architectures.
+> Building scalable Laravel systems, real-time applications, and clean backend architectures. 
 
 [![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)](https://laravel.com/)
 [![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat&logo=php&logoColor=white)](https://www.php.net/)
