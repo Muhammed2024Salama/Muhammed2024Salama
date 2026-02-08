@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Muhammed Salama — Laravel Backend Engineer
 
-> Laravel Backend Engineer building **production-grade eCommerce, operations intelligence, and financial decision systems** with clean architecture and DTO-driven design.
+> Laravel Backend Engineer building **production-grade , operations intelligence, and financial decision systems** with clean architecture and DTO-driven design.
 
 [![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)](https://laravel.com/)
 [![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat&logo=php&logoColor=white)](https://www.php.net/)
