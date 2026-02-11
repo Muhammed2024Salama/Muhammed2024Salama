@@ -66,7 +66,6 @@
   Solving algorithmic and logical challenges to strengthen problem-solving skills  
   🔗 https://www.codewars.com/users/Muhammed%20Salama
 
-
 ## 📫 Contact Me
 
 [![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:devmuhammedsalama@gmail.com)&nbsp;
