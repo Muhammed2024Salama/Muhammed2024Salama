@@ -36,7 +36,7 @@ I focus on:
 ## ⚙ Tech Stack
 
 **Backend:**  
-PHP 8+ · Laravel 10/11/12 · REST APIs · Sanctum · Livewire  
+PHP 8+ · Laravel 10/11/12 · REST APIs · Sanctum · YajraDataTable
 
 **Database:**  
 MySQL · PostgreSQL · Query Optimization · Indexing  
