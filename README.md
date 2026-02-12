@@ -1,73 +1,195 @@
-# 👋 Hi, I'm Muhammed Salama — Laravel Backend Engineer
+# 🚀 Muhammed Salama  
+## Laravel Backend Engineer | API Developer | Clean Architecture Enthusiast  
 
-> Laravel Backend Engineer building with clean architecture and DTO-driven design.
-
-[![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)](https://laravel.com/)
-[![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat&logo=php&logoColor=white)](https://www.php.net/)
-[![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=sql&logoColor=white)](https://en.wikipedia.org/wiki/SQL)
-[![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![jQuery](https://img.shields.io/badge/-jQuery-0769AD?style=flat&logo=jquery&logoColor=white)](https://jquery.com/)
-[![Ajax](https://img.shields.io/badge/-Ajax-0078FF?style=flat&logo=ajax&logoColor=white)](https://developer.mozilla.org/en-US/docs/AJAX)
-[![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat&logo=redis&logoColor=white)](https://redis.io/)
-[![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
-[![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white)](https://www.postman.com/)
-[![Pusher](https://img.shields.io/badge/-Pusher-010101?style=flat&logo=pusher&logoColor=white)](https://pusher.com/)
-[![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=white)](https://firebase.google.com/)
-[![Yajra DataTables](https://img.shields.io/badge/-Yajra%20DataTables-003B57?style=flat&logo=laravel&logoColor=white)](https://yajrabox.com/docs/laravel-datatables/master/installation)
-[![Codewars](https://img.shields.io/badge/-Codewars-B1361E?style=flat&logo=codewars&logoColor=white)](https://www.codewars.com/users/Muhammed%20Salama)
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=FF2D20&center=true&vCenter=true&width=600&lines=Laravel+Backend+Engineer;Scalable+Backend+Developer;REST+API+Specialist;Clean+Architecture+Advocate" />
+</p>
 
 ---
 
-## 🚀 Major Projects & Platforms
+## 🧠 About Me
 
-### 🧱 Live & Production Systems
+Laravel Backend Engineer focused on building **secure, scalable, and maintainable systems** using clean architecture principles and SOLID design.
 
-| Project | Description | Tech |
-|------|------------|------|
-| **Exspeeds Platform (Live)** | Real-time logistics platform with interactive dashboards and live order tracking | Laravel · REST APIs · Pusher · WebSockets |
-| **Drosat Platform (Live)** | Digital services and e-commerce platform built for performance and maintainability | Laravel · Blade · REST APIs |
-| **Elite BRICKS Dashboard (Live)** | Enterprise-grade admin dashboard using clean architecture and secure APIs | Laravel 11 · Repository-Service Pattern · Real-Time Events |
+I have production experience across **Saudi Arabia, UAE, and Egypt**, delivering enterprise solutions, CRM systems, logistics platforms, and e-commerce applications.
 
----
+✔ REST API Development  
+✔ Database Optimization  
+✔ Role-Based Systems  
+✔ Real-Time Features  
+✔ Clean Architecture Implementation  
 
-### 🔗 Project Links
-
-- **Exspeeds Frontend:** https://exspeeds.com/login  
-- **Exspeeds Backend:** https://api.exspeeds.com  
-- **Drosat Frontend:** https://drosat.com/  
-- **Elite BRICKS Frontend:** https://p-adviser.com  
-- **Elite BRICKS API Docs:** https://api.p-adviser.com/docs  
-- **Elite BRICKS API:** https://demoapi.p-adviser.com/api  
----
-
-## 🧠 Key Skills & Achievements
-
-- **Backend Architecture:** Designing scalable Laravel systems using Repository–Service and clean architecture principles  
-- **API Development:** Secure REST APIs with authentication, validation, and role-based access control  
-- **Real-Time Systems:** Live notifications & updates with Pusher and Laravel Echo (<500ms latency)  
-- **Database Design:** 50+ migrations, enums, indexing, foreign keys, audit logging  
-- **Data Automation:** Import/export of 10K+ records using Laravel Excel  
-- **Reusable Components:** Shared Traits (`ResponseHelper`, `ImageUploadTrait`), S3 & cloud storage integration  
+> I build backend systems that are structured, scalable, and production-ready.
 
 ---
 
-### 📈 Activity Graph
+## 🏢 Professional Experience
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Muhammed2024Salama&theme=react-dark&hide_border=true&area=true)
+### 🟢 Al Ula Company | Blue Wide World – Riyadh / Cairo  
+**Back-End Developer (Sep 2025 – Present)**  
+
+- Developed enterprise Laravel systems  
+- Integrated and maintained REST APIs  
+- Optimized MySQL & PostgreSQL performance  
+- Improved system stability & security  
+- Delivered scalable backend modules  
 
 ---
 
-## 🧩 Competitive Programming
+### 🟢 Elite BRICKS Real Estate Brokers LLC – Dubai  
+**Back-End Developer (Jan 2025 – Jun 2025)**  
 
-- 🥋 **Codewars:**  
-  Solving algorithmic and logical challenges to strengthen problem-solving skills  
-  🔗 https://www.codewars.com/users/Muhammed%20Salama
+- Built real-estate management modules  
+- Automated listing workflows  
+- Integrated external APIs  
+- Enhanced reporting performance  
 
-## 📫 Contact Me
+---
 
-[![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:devmuhammedsalama@gmail.com)&nbsp;
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohamed2050)&nbsp;
-[![Upwork](https://img.shields.io/badge/-Upwork-6fda44?style=flat&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~0182dd45bb78cc6fc1)
+### 🟢 AiTech – Egypt  
+**Back-End Developer (Aug 2024 – Dec 2024)**  
+
+- Built CRM modules using Laravel  
+- Improved performance through indexing & query optimization  
+- Reduced API response time significantly  
+
+---
+
+## 🏗 Production Systems (Live)
+
+### 🚚 Exspeeds – Logistics Platform  
+
+**Stack:** Laravel 12 · Sanctum · WebSockets · MySQL · Pusher  
+
+- 20+ documented API endpoints  
+- Live shipment tracking  
+- Expense & reporting modules  
+- Bulk import/export system  
+- Production deployment  
+
+🔗 https://api.exspeeds.com  
+
+---
+
+### 🏢 Elite BRICKS – Enterprise Dashboard  
+
+**Stack:** Laravel 11 · Repository Pattern · Service Layer · RBAC  
+
+🔗 https://api.p-adviser.com/docs  
+
+---
+
+### 🛒 Multi-Vendor E-Commerce Platform  
+
+- PayPal · Stripe · Razorpay · COD  
+- Role-based dashboards  
+- Flash sales system  
+- Real-time notifications  
+- Payment automation  
+
+---
+
+## 🧩 Technical Stack
+
+### Backend
+- PHP 8+
+- Laravel 10 / 11 / 12
+- Livewire
+- REST APIs
+- Sanctum Authentication
+- Role & Permission Systems
+
+### Database
+- MySQL
+- PostgreSQL
+- Query Optimization
+- Indexing
+- Audit Logging
+
+### Real-Time
+- Laravel Echo
+- Pusher
+- WebSockets
+
+### DevOps & Tools
+- Docker
+- Git
+- Postman
+- Composer
+
+### Architecture & Concepts
+- OOP
+- MVC
+- SOLID Principles
+- Clean Architecture
+- Repository-Service Pattern
+- DTO Pattern
+- API Documentation
+
+---
+
+## ⚡ Development Approach
+
+✔ Structured backend code  
+✔ Clear separation of concerns  
+✔ Business logic outside controllers  
+✔ Secure authentication & validation  
+✔ Database performance awareness  
+✔ Production-ready mindset  
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=Muhammed2024Salama&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+## 🏆 Achievements
+
+- Built 50+ database migrations with optimized indexing
+- Implemented secure authentication systems
+- Delivered production systems in multiple countries
+- Mentored backend students
+- Built logistics system with real-time updates
+
+---
+
+## 🎓 Education & Certifications
+
+- Bachelor of Arts – Menoufia University  
+- Back-End Diploma – Mahara Tech  
+- Back-End Diploma – Itrax Academy  
+- Back-End Diploma – EraaSoft  
+
+---
+
+## 🌍 Competitive Programming
+
+Codewars problem solving  
+🔗 https://www.codewars.com/users/Muhammed%20Salama  
+
+---
+
+## 📫 Let’s Connect
+
+<p align="center">
+  <a href="mailto:devmuhammedsalama@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/mohamed2050" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://www.upwork.com/freelancers/~0182dd45bb78cc6fc1" target="_blank">
+    <img src="https://img.shields.io/badge/Upwork-6FDA44?style=for-the-badge&logo=upwork&logoColor=white" />
+  </a>
+</p>
+
+
+---
+
+# 🎯 Career Objective
+
+To grow as a Laravel Backend Engineer in a performance-driven environment where I can contribute to scalable systems and continuously improve my backend architecture skills.
