@@ -99,6 +99,9 @@ SOLID · Clean Architecture · Repository Pattern · Service Layer · DTO
   <a href="https://www.upwork.com/freelancers/~0182dd45bb78cc6fc1" target="_blank">
     <img src="https://img.shields.io/badge/Upwork-6FDA44?style=for-the-badge&logo=upwork&logoColor=white" />
   </a>
+  <a href="https://www.codewars.com/users/Muhammed%20Salama" target="_blank">
+    <img src="https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=codewars&logoColor=white" />
+  </a>
 </p>
 
 ---
