@@ -34,7 +34,7 @@
 
 ---
 
-Backend engineer specializing in Laravel and REST API design. I've shipped production backends across logistics, real estate consulting, and multi-vendor e-commerce — systems involving multi-tenant access control, financial workflows, real-time messaging, and AI-backed APIs.
+I build production Laravel backends for logistics, real estate, and multi-vendor commerce — focusing on scalable REST APIs, maintainable architecture, and developer tooling.
 
 Authorization lives at the service layer, not the route. Every endpoint returns a consistent response envelope. AI integrations are session-managed, streamed over SSE, and isolated at service boundaries.
 
@@ -89,17 +89,8 @@ $muhammed = [
     </td>
     <td valign="top" width="33%">
       <h3>BWW Store</h3>
-      <p>Multi-vendor e-commerce backend. Covers affiliate commission management, multi-stage financial approval workflows, shipment SLA operations, and a four-domain analytics suite.</p>
-      <p>
-        <a href="https://admin-dev-v1.bww-store.com/en">
-          <img src="https://img.shields.io/badge/Admin-0A66C2?style=flat-square&logo=safari&logoColor=white" />
-        </a>
-        &nbsp;
-        <a href="https://bww-tech.bww-store.com/">
-          <img src="https://img.shields.io/badge/Store-28A745?style=flat-square&logo=safari&logoColor=white" />
-        </a>
-      </p>
-      <sub><code>Laravel · E-Commerce · Affiliate · Finance · Analytics</code></sub>
+      <p>Backend engineering for a production multi-vendor e-commerce platform, focusing on scalable REST APIs, maintainable architecture, and core platform development.</p>
+      <sub><code>Laravel · REST API · Platform APIs</code></sub>
     </td>
   </tr>
   <tr>
@@ -215,15 +206,14 @@ php artisan make:module Product
 
 | Domain | Implementation |
 | --- | --- |
-| **AI / LLM Integration** | Session-scoped OpenAI, SSE streaming, provider-swappable service boundary — P-Adviser |
-| **Real-time Systems** | Pusher private chat — per-participant read-state, attachments, entity-linked threads — P-Adviser |
-| **Financial Workflows** | Multi-stage approval pipelines, audited state transitions, monthly period closing — BWW Store |
-| **Affiliate Engine** | Hierarchical commission calculation, pending → approved → paid lifecycle, approval-gated payouts — BWW Store |
-| **Operations & Logistics** | SLA breach detection, courier reconciliation, COD lifecycle tracking — Exspeeds · BWW Store |
-| **Analytics APIs** | Four-domain intelligence suite (orders, products, users, vendors) — filterable, exportable — BWW Store |
-| **Multi-tenant RBAC** | Service-layer authorization, tenant-scoped repository constraints — Exspeeds · P-Adviser |
+| **AI / LLM Integration** | Session-scoped OpenAI, SSE streaming, isolated service boundary — P-Adviser |
+| **Real-time Systems** | Pusher private messaging — per-participant read-state, attachment support, entity-linked threads — P-Adviser |
+| **Backend APIs** | Production platform systems for a large-scale e-commerce platform — BWW Store |
+| **Production Backend Systems** | Scalable REST APIs across production logistics and e-commerce systems — Exspeeds · BWW Store |
+| **Reporting APIs** | Reporting APIs with scalable aggregation endpoints — BWW Store |
+| **Multi-tenant RBAC** | Service-layer authorization, role-based access control across tenant boundaries — Exspeeds · P-Adviser |
 | **i18n API Design** | AR/EN bilingual via localized model attributes — uniform query logic across locales — P-Adviser |
-| **Data Import** | Server-side row-level validation, structured per-row error reporting — P-Adviser |
+| **Bulk Data Processing** | Server-side row-level validation, structured per-row error reporting — P-Adviser |
 | **Open Source** | `laravel-base` — architecture-enforcing scaffolding, OpenAPI by default, Laravel 10–13 |
 
 ---
@@ -235,7 +225,7 @@ php artisan make:module Product
 
 | System | Problem | Key Engineering |
 | --- | --- | --- |
-| **Multi-Vendor E-Commerce** | Isolated vendor storefronts, shared catalog, unified order management | Tenant-scoped data access, shared inventory visibility, idempotent payment webhook handling |
+| **Multi-Vendor E-Commerce** | Isolated vendor storefronts, shared catalog, unified order management | Scalable multi-vendor backend architecture, secure API design, reliable payment integration |
 | **Logistics Management** | End-to-end shipment lifecycle — tracking, dispatch, reporting, reconciliation | State machine for shipment transitions; performant aggregation at operational volume |
 | **CRM** | Lead pipeline, customer records, activity history, automated notifications | Flexible RBAC, activity-log integrity, cross-module notification routing |
 | **REST API Platforms** | Versioned, authenticated, rate-limited APIs with OpenAPI documentation | Contract stability across versions during active product development |
