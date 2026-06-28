@@ -34,12 +34,13 @@
 
 ---
 
-Backend engineer specializing in Laravel and REST API design. I've shipped backends across enterprise logistics, business consulting, and e-commerce — systems with real access control requirements, non-trivial state management, and operational reporting under load.
+Backend engineer specializing in Laravel and REST API design. I've shipped backends across enterprise logistics, real estate consulting, and multi-vendor e-commerce — systems with real access control requirements, non-trivial state management, financial workflows, and operational reporting under load.
 
 **How I build:**
 - APIs are versioned, documented, and contract-stable — designed to survive product iterations without breaking consumers
 - Optimization is deliberate: indexing strategy, query analysis, Redis caching, and queue offloading — not premature
 - Authorization is enforced at the service layer. Input is validated at the boundary. Every endpoint returns a consistent response envelope.
+- Third-party AI integrations are treated as service boundaries — session-managed, streamed to clients over SSE, and isolated from core domain logic.
 
 ## Core Principles
 
@@ -116,6 +117,20 @@ php artisan make:module Product
 <table>
   <tr>
     <td valign="top" width="33%">
+      <h3>Laravel Base</h3>
+      <p>Open-source Artisan scaffolding package. One command generates a complete, architecture-correct REST API module with Repository–Service contracts, whitelist-filtered queries, OpenAPI-annotated controllers, and a consistent response envelope.</p>
+      <p>
+        <a href="https://github.com/MuhammedMSalama/LaravelBase">
+          <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+        </a>
+        &nbsp;
+        <a href="https://packagist.org/packages/muhammedsalama/laravel-base">
+          <img src="https://img.shields.io/badge/Packagist-F28D1A?style=flat-square&logo=packagist&logoColor=white" />
+        </a>
+      </p>
+      <sub><code>PHP · Laravel · Open Source · API Scaffolding</code></sub>
+    </td>
+    <td valign="top" width="33%">
       <h3>Exspeeds</h3>
       <p>Shipment lifecycle API covering intake, tracking, dispatch, and financial reconciliation. Three-tier RBAC (admin / operations / client) with tenant-scoped data isolation enforced at the service layer.</p>
       <p>
@@ -131,7 +146,7 @@ php artisan make:module Product
     </td>
     <td valign="top" width="33%">
       <h3>P-Adviser</h3>
-      <p>AR/EN multi-language consulting platform with tiered RBAC and a separate admin dashboard for content, client, and account management.</p>
+      <p>AR/EN real estate consulting platform with a layered backend: real-time Pusher chat (private threads, attachments, read-state), session-scoped AI assistant streamed over SSE, RBAC admin dashboard, PDF generation, Excel import, and multi-language content APIs — fully documented with Swagger/OpenAPI.</p>
       <p>
         <a href="https://p-adviser.com/en">
           <img src="https://img.shields.io/badge/Website-0A66C2?style=flat-square&logo=safari&logoColor=white" />
@@ -140,19 +155,40 @@ php artisan make:module Product
         <a href="https://dashboard.p-adviser.com/">
           <img src="https://img.shields.io/badge/Dashboard-28A745?style=flat-square&logo=chartdotjs&logoColor=white" />
         </a>
-      </p>
-      <sub><code>Laravel · i18n · RBAC · Admin Dashboard</code></sub>
-    </td>
-    <td valign="top" width="33%">
-      <h3>BWW Store</h3>
-      <p>Product catalog, cart, checkout, and order fulfillment on a custom Laravel backend.</p>
-      <p>
-        <a href="https://bww-tech.bww-store.com/">
-          <img src="https://img.shields.io/badge/Store-0A66C2?style=flat-square&logo=safari&logoColor=white" />
+        &nbsp;
+        <a href="https://api.p-adviser.com/docs#ai-chat-assistant-GETapi-ai-session-create">
+          <img src="https://img.shields.io/badge/AI_API-6A0DAD?style=flat-square&logo=openai&logoColor=white" />
         </a>
       </p>
-      <sub><code>Laravel · E-Commerce · Order Management</code></sub>
+      <sub><code>Laravel · i18n · RBAC · Pusher · OpenAI · SSE · PDF · Excel</code></sub>
     </td>
+  </tr>
+  <tr>
+    <td valign="top" width="33%">
+      <h3>BWW Store</h3>
+      <p>Multi-vendor e-commerce backend with affiliate commission engine, multi-stage financial approval workflows, shipment SLA tracking, courier reconciliation, and a full analytics suite covering orders, products, users, and vendors.</p>
+      <p>
+        <a href="https://admin-dev-v1.bww-store.com/en">
+          <img src="https://img.shields.io/badge/Admin-0A66C2?style=flat-square&logo=safari&logoColor=white" />
+        </a>
+        &nbsp;
+        <a href="https://bww-tech.bww-store.com/">
+          <img src="https://img.shields.io/badge/Store-28A745?style=flat-square&logo=safari&logoColor=white" />
+        </a>
+      </p>
+      <sub><code>Laravel · E-Commerce · Affiliate · Finance · Analytics · Operations</code></sub>
+    </td>
+    <td valign="top" width="33%">
+      <h3>Drosat</h3>
+      <p>Backend engineering contribution on a production Laravel platform, delivered as part of the AiTech engineering team. Developed REST API modules and backend features integrated into a live multi-module product.</p>
+      <p>
+        <a href="https://drosat.com/">
+          <img src="https://img.shields.io/badge/Platform-0A66C2?style=flat-square&logo=safari&logoColor=white" />
+        </a>
+      </p>
+      <sub><code>Laravel · REST API · AiTech · Team Collaboration</code></sub>
+    </td>
+    <td valign="top" width="33%"></td>
   </tr>
 </table>
 
@@ -179,7 +215,63 @@ php artisan make:module Product
 ---
 
 <details>
-<summary><b>Project Portfolio — 7 backend system types</b></summary>
+<summary><b>Case Study — P-Adviser Consulting Platform</b></summary>
+
+<br/>
+
+**Problem** — A real estate consulting business needed a single API backend serving heterogeneous requirements: bilingual content (AR/EN), an AI-powered advisory assistant, real-time user messaging, document generation, and a separate admin control surface — all with differentiated access control across client and admin roles.
+
+**Architecture** — Modular Laravel API with RBAC separating client and admin concerns at the service layer. Controllers handle only request validation and response formatting; all domain logic lives in services. Multi-language content resolves via localized model attributes, keeping query logic uniform regardless of locale.
+
+**Engineering Work**
+
+*AI Chat Assistant* — Session-scoped conversation state per user, preventing context bleed across sessions. OpenAI responses streamed to clients in real time over Server-Sent Events. The AI layer is isolated at the service boundary — swapping or updating the underlying model provider requires no change to consuming controllers.
+
+*Real-time Chat System* — Private conversations over Pusher broadcasting with a full message lifecycle: delivery, read-state tracking per participant, and attachment support. Conversations are entity-linked — threads can be anchored to platform objects (properties, inquiries). Contact management, chat history, and unread-count APIs complete the system.
+
+*Admin Dashboard Backend* — Separate authenticated surface with RBAC-controlled access. Covers user management, property and content administration, and reporting APIs. Permission checks enforced at the service layer across all admin routes; the admin dashboard runs at a distinct subdomain with its own session boundary.
+
+*Supporting Backend Systems* — PDF generation for client reports and consultation documents. Excel import pipeline with server-side row-level validation and domain rule enforcement via Laravel Excel, returning structured per-row error reporting. Multi-language content APIs expose AR/EN data without duplicating underlying data structures.
+
+*Documentation* — Full Swagger/OpenAPI coverage across all API surfaces, including dedicated documentation for the AI session endpoints at [api.p-adviser.com/docs](https://api.p-adviser.com/docs).
+
+**Outcome** — Production platform at [p-adviser.com](https://p-adviser.com/en) with a live admin dashboard at [dashboard.p-adviser.com](https://dashboard.p-adviser.com/). API documentation published and stable for frontend integration.
+
+</details>
+
+---
+
+<details>
+<summary><b>Case Study — BWW Store E-Commerce Platform</b></summary>
+
+<br/>
+
+**Problem** — A multi-vendor e-commerce platform required backend infrastructure beyond standard catalog and checkout: an affiliate attribution and payout system, auditable financial approval workflows, operational logistics visibility, and analytics across multiple business dimensions — each domain with its own access control, reporting, and export requirements.
+
+**Architecture** — Modular Laravel backend with explicit domain boundaries: commerce, affiliate, finance, operations, and analytics each maintain their own service layer. Financial state transitions are modeled as explicit, auditable workflows rather than direct mutations. Approval chains are configurable and logged at every state change, providing a complete audit trail without requiring ad-hoc reconstruction.
+
+**Engineering Work**
+
+*Affiliate System* — Hierarchical affiliate structure with a commission calculation engine that runs per sale. Commission lifecycle tracked from pending through approval to payout. Payout workflows include approval gates before disbursement. Full commission audit trail maintained per transaction for reconciliation purposes.
+
+*Financial Workflows* — Balance requests, refunds, and ledger adjustments routed through multi-stage approval pipelines. Every state transition is logged with actor, timestamp, and reason. Monthly financial closing process enforces consistency checks before period lock. Reconciliation framework for cross-system financial alignment and discrepancy detection.
+
+*Operations* — Shipment SLA tracking against committed delivery windows with breach detection. Courier reconciliation covering cross-carrier settlements and discrepancy handling. COD lifecycle tracking across collection and remittance states. Operations dashboard APIs aggregating fleet and fulfillment metrics for the operations team.
+
+*Analytics Suite* — Four intelligence dashboards: Orders (GMV, conversion, status breakdowns), Product 360 (performance, return rates, margin analysis), User Intelligence (behavior and value segmentation), and Vendor Intelligence (performance scoring, SLA adherence). All dashboards expose filterable, exportable API endpoints.
+
+*Vendor Governance* — Vendor offer management with pricing protection guardrails. Margin calculations validated server-side before offer activation. Approval engine for price changes and promotions, blocking offers that violate configured margin thresholds.
+
+*Admin Platform* — Dashboard APIs, reporting endpoints, and export pipelines spanning all business domains. Expense management with recurring expense scheduling integrated into the monthly financial closing workflow.
+
+**Outcome** — Production admin platform at [admin-dev-v1.bww-store.com](https://admin-dev-v1.bww-store.com/en). Live storefront at [bww-tech.bww-store.com](https://bww-tech.bww-store.com/).
+
+</details>
+
+---
+
+<details>
+<summary><b>Project Portfolio — 10 backend system types</b></summary>
 
 <br/>
 
@@ -192,15 +284,35 @@ php artisan make:module Product
 | **Dashboard Systems** | RBAC dashboards with real-time data and exportable reports | Role-scoped aggregation with query performance maintained at scale |
 | **Authentication Systems** | OAuth2, Sanctum, email verification, 2FA, session lifecycle | Secure token handling across web and API consumers with consistent revocation |
 | **Payment Integrations** | Gateway abstraction, webhook verification, reconciliation, refund handling | Idempotent webhook processing; accurate financial state under concurrent load |
+| **Real-Time Chat** | User-to-user messaging with conversation history, read receipts, contact management, and entity-linked threads | Event-driven delivery via Pusher broadcasting; sender-receiver indexed history; message state tracking per conversation |
+| **AI-Backed APIs** | Contextual assistant backend with persistent conversation state and real-time response delivery | Session-scoped context management, Server-Sent Events for streaming, OpenAI integration isolated at the service layer |
+| **Data Import Pipelines** | API-first bulk data ingestion from external sources with business rule enforcement | Server-side row-level validation, domain rule enforcement at the service layer, structured error reporting via Laravel Excel |
 
 </details>
+
+---
+
+## Selected Engineering Contributions
+
+| Domain | Contribution |
+| --- | --- |
+| **API Design** | Versioned, OpenAPI-documented REST APIs with a consistent response envelope; contract-stable across active product iterations on multiple production platforms |
+| **AI Integration** | Session-scoped OpenAI assistant with SSE streaming; context isolated at the service boundary so provider changes require no modification to consumers |
+| **Real-time Systems** | Pusher-backed private chat: message delivery, per-participant read-state, attachment support, entity-linked threads, contact management, and unread-count APIs |
+| **Financial Systems** | Multi-stage approval workflows for balance requests, refunds, and adjustments; audit-logged state transitions; monthly financial closing with consistency enforcement |
+| **Affiliate Systems** | Hierarchical commission engine with full lifecycle tracking (pending → approved → paid), approval-gated payout workflows, and per-transaction audit trail |
+| **Operations** | Shipment SLA breach detection, courier reconciliation, COD lifecycle tracking, and aggregated operations dashboard APIs |
+| **Analytics** | Intelligence dashboards across orders, products, users, and vendors — filterable and exportable API surfaces per business dimension |
+| **RBAC** | Role-based access enforced at the service layer across multi-tenant and multi-role platforms; permission checks never delegated to route middleware alone |
+| **Documentation** | Swagger/OpenAPI coverage across all public API surfaces; auto-generated per module via `laravel-base` scaffolding |
+| **Open Source** | [`laravel-base`](https://github.com/MuhammedMSalama/LaravelBase) — published on Packagist, supporting Laravel 10–13, PHP 8.1+ |
 
 ---
 
 ## Tech Stack
 
 ### Backend
-`PHP 8+` `Laravel 10–13` `REST API Design` `Laravel Sanctum` `OAuth2`
+`PHP 8+` `Laravel 10–13` `REST API Design` `Laravel Sanctum` `OAuth2` `Pusher` `Laravel Excel`
 
 ### Architecture
 `Repository–Service` `SOLID` `Clean Architecture` `DTO` `API Versioning` `RBAC`
@@ -242,7 +354,7 @@ php artisan make:module Product
 
 <div align="center">
 
-**Open to freelance, part-time backend engineering opportunities, and technical consulting.**
+Available for backend consulting, freelance collaborations, and open-source contributions.
 
 <p>
   <a href="mailto:devmuhammedsalama@gmail.com">
