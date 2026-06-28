@@ -34,20 +34,9 @@
 
 ---
 
-Backend engineer specializing in Laravel and REST API design. I've shipped backends across enterprise logistics, real estate consulting, and multi-vendor e-commerce — systems with real access control requirements, non-trivial state management, financial workflows, and operational reporting under load.
+Backend engineer specializing in Laravel and REST API design. I've shipped production backends across logistics, real estate consulting, and multi-vendor e-commerce — systems involving multi-tenant access control, financial workflows, real-time messaging, and AI-backed APIs.
 
-**How I build:**
-- APIs are versioned, documented, and contract-stable — designed to survive product iterations without breaking consumers
-- Optimization is deliberate: indexing strategy, query analysis, Redis caching, and queue offloading — not premature
-- Authorization is enforced at the service layer. Input is validated at the boundary. Every endpoint returns a consistent response envelope.
-- Third-party AI integrations are treated as service boundaries — session-managed, streamed to clients over SSE, and isolated from core domain logic.
-
-## Core Principles
-
-- Contract-first: design the API surface before writing the implementation
-- Authorization at the service layer, never at the route
-- Performance driven by measurement, not assumption
-- Explicit architecture over framework convention
+Authorization lives at the service layer, not the route. Every endpoint returns a consistent response envelope. AI integrations are session-managed, streamed over SSE, and isolated at service boundaries.
 
 ```php
 $muhammed = [
@@ -62,11 +51,121 @@ $muhammed = [
 
 ---
 
+## Live Projects
+
+<table>
+  <tr>
+    <td valign="top" width="33%">
+      <h3>Exspeeds</h3>
+      <p>Logistics platform covering shipment intake, tracking, dispatch, and financial reconciliation across a multi-tenant system with three-tier RBAC.</p>
+      <p>
+        <a href="https://exspeeds.com/login">
+          <img src="https://img.shields.io/badge/Platform-0A66C2?style=flat-square&logo=safari&logoColor=white" />
+        </a>
+        &nbsp;
+        <a href="https://api.exspeeds.com/">
+          <img src="https://img.shields.io/badge/API-28A745?style=flat-square&logo=postman&logoColor=white" />
+        </a>
+      </p>
+      <sub><code>Laravel · REST API · RBAC · Multi-tenant</code></sub>
+    </td>
+    <td valign="top" width="33%">
+      <h3>P-Adviser</h3>
+      <p>Bilingual (AR/EN) real estate consulting platform. Single API backend serving separate client and admin surfaces — AI assistance, real-time messaging, PDF generation, and bulk data import.</p>
+      <p>
+        <a href="https://p-adviser.com/en">
+          <img src="https://img.shields.io/badge/Website-0A66C2?style=flat-square&logo=safari&logoColor=white" />
+        </a>
+        &nbsp;
+        <a href="https://dashboard.p-adviser.com/">
+          <img src="https://img.shields.io/badge/Dashboard-28A745?style=flat-square&logo=chartdotjs&logoColor=white" />
+        </a>
+        &nbsp;
+        <a href="https://api.p-adviser.com/docs#ai-chat-assistant-GETapi-ai-session-create">
+          <img src="https://img.shields.io/badge/AI_API-6A0DAD?style=flat-square&logo=openai&logoColor=white" />
+        </a>
+      </p>
+      <sub><code>Laravel · i18n · RBAC · Pusher · OpenAI · SSE</code></sub>
+    </td>
+    <td valign="top" width="33%">
+      <h3>BWW Store</h3>
+      <p>Multi-vendor e-commerce backend. Covers affiliate commission management, multi-stage financial approval workflows, shipment SLA operations, and a four-domain analytics suite.</p>
+      <p>
+        <a href="https://admin-dev-v1.bww-store.com/en">
+          <img src="https://img.shields.io/badge/Admin-0A66C2?style=flat-square&logo=safari&logoColor=white" />
+        </a>
+        &nbsp;
+        <a href="https://bww-tech.bww-store.com/">
+          <img src="https://img.shields.io/badge/Store-28A745?style=flat-square&logo=safari&logoColor=white" />
+        </a>
+      </p>
+      <sub><code>Laravel · E-Commerce · Affiliate · Finance · Analytics</code></sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" width="33%">
+      <h3>Drosat</h3>
+      <p>Backend API contribution on a production Laravel platform as part of the AiTech engineering team.</p>
+      <p>
+        <a href="https://drosat.com/">
+          <img src="https://img.shields.io/badge/Platform-0A66C2?style=flat-square&logo=safari&logoColor=white" />
+        </a>
+      </p>
+      <sub><code>Laravel · REST API · AiTech</code></sub>
+    </td>
+    <td valign="top" width="33%"></td>
+    <td valign="top" width="33%"></td>
+  </tr>
+</table>
+
+---
+
+<details>
+<summary><b>Case Study — Exspeeds Logistics Platform</b></summary>
+
+<br/>
+
+**Problem** — Operations across shipment intake, dispatch, and financial reconciliation were managed through disconnected tools with no unified API layer.
+
+**Architecture** — Modular REST API with Repository–Service separation. Three-tier RBAC (admin / operations / client) enforced at the service layer, not the route. Tenant isolation applied at the repository layer via a shared constraint — covering all modules without per-endpoint guard logic.
+
+**Engineering Decisions**
+- Shipment state machine rejects invalid status progressions before persistence — handles concurrent writes without distributed locking overhead
+- Financial reconciliation maintains query accuracy and performance as operational data volume accumulates
+- Tenant data boundaries applied through base repository scoping, preventing per-controller isolation drift
+
+**Outcome** — Production API at [api.exspeeds.com](https://api.exspeeds.com/), stable enough for frontend integration without schema change coordination.
+
+</details>
+
+---
+
+<details>
+<summary><b>Case Study — P-Adviser Consulting Platform</b></summary>
+
+<br/>
+
+**Problem** — A bilingual (AR/EN) consulting platform serving both end users and an admin team through a single API backend. Required AI assistance, real-time messaging, document generation, and bulk import — each with distinct access control.
+
+**Architecture** — Service-layer RBAC separates client and admin concerns. Multi-language content is resolved via localized model attributes; query logic stays uniform regardless of locale. OpenAI and Pusher integrations are isolated at dedicated service boundaries — provider or transport changes are contained to the service implementation.
+
+**Engineering Decisions**
+- AI session management: conversation state scoped per user prevents context bleed. Responses stream over SSE. The service boundary means the underlying model provider can change without touching consuming controllers.
+- Chat system: Pusher-backed private conversations with a full message lifecycle — delivery, per-participant read-state, and attachment support. Threads are entity-linked and can be anchored to specific platform objects (properties, inquiries).
+- Excel import: row-level validation runs server-side with structured per-row error reporting returned to the client. Business rules enforced at the service layer, not the controller.
+- Admin surface: separate subdomain with its own session boundary. Service-layer authorization covers all admin routes regardless of HTTP method or controller entry point.
+
+**Outcome** — Production at [p-adviser.com](https://p-adviser.com/en), admin at [dashboard.p-adviser.com](https://dashboard.p-adviser.com/), API docs at [api.p-adviser.com/docs](https://api.p-adviser.com/docs).
+
+</details>
+
+---
+
 ## Open Source — laravel-base
 
 <sub>GitHub: <a href="https://github.com/MuhammedMSalama/LaravelBase">MuhammedMSalama/LaravelBase</a> &nbsp;·&nbsp; Packagist: <a href="https://packagist.org/packages/muhammedsalama/laravel-base">muhammedsalama/laravel-base</a></sub>
 
-One Artisan command generates a complete, architecture-correct REST API module: auto-bound Repository–Service contracts, whitelist-filtered queries, OpenAPI-annotated controllers, and a consistent `ApiResponse` envelope — enforcing the same structure across every module in the project.
+Built after repeatedly solving the same architectural problems across production projects. One Artisan command generates a complete, architecture-enforcing REST API module: auto-bound Repository–Service contracts, whitelist-filtered queries, OpenAPI-annotated controllers, and a consistent `ApiResponse` envelope — applied uniformly across every module.
 
 <p>
   <a href="https://packagist.org/packages/muhammedsalama/laravel-base">
@@ -112,161 +211,20 @@ php artisan make:module Product
 
 ---
 
-## Live Projects
+## Selected Engineering Contributions
 
-<table>
-  <tr>
-    <td valign="top" width="33%">
-      <h3>Laravel Base</h3>
-      <p>Open-source Artisan scaffolding package. One command generates a complete, architecture-correct REST API module with Repository–Service contracts, whitelist-filtered queries, OpenAPI-annotated controllers, and a consistent response envelope.</p>
-      <p>
-        <a href="https://github.com/MuhammedMSalama/LaravelBase">
-          <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" />
-        </a>
-        &nbsp;
-        <a href="https://packagist.org/packages/muhammedsalama/laravel-base">
-          <img src="https://img.shields.io/badge/Packagist-F28D1A?style=flat-square&logo=packagist&logoColor=white" />
-        </a>
-      </p>
-      <sub><code>PHP · Laravel · Open Source · API Scaffolding</code></sub>
-    </td>
-    <td valign="top" width="33%">
-      <h3>Exspeeds</h3>
-      <p>Shipment lifecycle API covering intake, tracking, dispatch, and financial reconciliation. Three-tier RBAC (admin / operations / client) with tenant-scoped data isolation enforced at the service layer.</p>
-      <p>
-        <a href="https://exspeeds.com/login">
-          <img src="https://img.shields.io/badge/Platform-0A66C2?style=flat-square&logo=safari&logoColor=white" />
-        </a>
-        &nbsp;
-        <a href="https://api.exspeeds.com/">
-          <img src="https://img.shields.io/badge/API-28A745?style=flat-square&logo=postman&logoColor=white" />
-        </a>
-      </p>
-      <sub><code>Laravel · REST API · RBAC · State Management</code></sub>
-    </td>
-    <td valign="top" width="33%">
-      <h3>P-Adviser</h3>
-      <p>AR/EN real estate consulting platform with a layered backend: real-time Pusher chat (private threads, attachments, read-state), session-scoped AI assistant streamed over SSE, RBAC admin dashboard, PDF generation, Excel import, and multi-language content APIs — fully documented with Swagger/OpenAPI.</p>
-      <p>
-        <a href="https://p-adviser.com/en">
-          <img src="https://img.shields.io/badge/Website-0A66C2?style=flat-square&logo=safari&logoColor=white" />
-        </a>
-        &nbsp;
-        <a href="https://dashboard.p-adviser.com/">
-          <img src="https://img.shields.io/badge/Dashboard-28A745?style=flat-square&logo=chartdotjs&logoColor=white" />
-        </a>
-        &nbsp;
-        <a href="https://api.p-adviser.com/docs#ai-chat-assistant-GETapi-ai-session-create">
-          <img src="https://img.shields.io/badge/AI_API-6A0DAD?style=flat-square&logo=openai&logoColor=white" />
-        </a>
-      </p>
-      <sub><code>Laravel · i18n · RBAC · Pusher · OpenAI · SSE · PDF · Excel</code></sub>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" width="33%">
-      <h3>BWW Store</h3>
-      <p>Multi-vendor e-commerce backend with affiliate commission engine, multi-stage financial approval workflows, shipment SLA tracking, courier reconciliation, and a full analytics suite covering orders, products, users, and vendors.</p>
-      <p>
-        <a href="https://admin-dev-v1.bww-store.com/en">
-          <img src="https://img.shields.io/badge/Admin-0A66C2?style=flat-square&logo=safari&logoColor=white" />
-        </a>
-        &nbsp;
-        <a href="https://bww-tech.bww-store.com/">
-          <img src="https://img.shields.io/badge/Store-28A745?style=flat-square&logo=safari&logoColor=white" />
-        </a>
-      </p>
-      <sub><code>Laravel · E-Commerce · Affiliate · Finance · Analytics · Operations</code></sub>
-    </td>
-    <td valign="top" width="33%">
-      <h3>Drosat</h3>
-      <p>Backend engineering contribution on a production Laravel platform, delivered as part of the AiTech engineering team. Developed REST API modules and backend features integrated into a live multi-module product.</p>
-      <p>
-        <a href="https://drosat.com/">
-          <img src="https://img.shields.io/badge/Platform-0A66C2?style=flat-square&logo=safari&logoColor=white" />
-        </a>
-      </p>
-      <sub><code>Laravel · REST API · AiTech · Team Collaboration</code></sub>
-    </td>
-    <td valign="top" width="33%"></td>
-  </tr>
-</table>
-
----
-
-<details>
-<summary><b>Case Study — Exspeeds Logistics Platform</b></summary>
-
-<br/>
-
-**Problem** — No unified backend tracked shipments end-to-end, coordinated dispatch, or reconciled financial records. Operations were spread across disconnected tools with no API layer.
-
-**Architecture** — Modular REST API with vertical-slice structure. Repository–Service separation isolates business logic from query concerns. Three-tier RBAC (admin / operations / client) is enforced at the service layer — not the route level — with tenant-scoped data isolation per account.
-
-**Key Engineering Challenges**
-- State machine for shipment transitions: rejecting invalid progressions under concurrent writes without distributed locking overhead
-- Financial reconciliation: maintaining query accuracy and performance as operational data volume accumulates
-- Tenant isolation: consistent account-scoped data boundaries across all modules without duplicating guard logic per endpoint
-
-**Outcome** — Production API at [api.exspeeds.com](https://api.exspeeds.com/). Contracts documented and stable enough for the frontend team to build against without coordinating every schema change.
-
-</details>
-
----
-
-<details>
-<summary><b>Case Study — P-Adviser Consulting Platform</b></summary>
-
-<br/>
-
-**Problem** — A real estate consulting business needed a single API backend serving heterogeneous requirements: bilingual content (AR/EN), an AI-powered advisory assistant, real-time user messaging, document generation, and a separate admin control surface — all with differentiated access control across client and admin roles.
-
-**Architecture** — Modular Laravel API with RBAC separating client and admin concerns at the service layer. Controllers handle only request validation and response formatting; all domain logic lives in services. Multi-language content resolves via localized model attributes, keeping query logic uniform regardless of locale.
-
-**Engineering Work**
-
-*AI Chat Assistant* — Session-scoped conversation state per user, preventing context bleed across sessions. OpenAI responses streamed to clients in real time over Server-Sent Events. The AI layer is isolated at the service boundary — swapping or updating the underlying model provider requires no change to consuming controllers.
-
-*Real-time Chat System* — Private conversations over Pusher broadcasting with a full message lifecycle: delivery, read-state tracking per participant, and attachment support. Conversations are entity-linked — threads can be anchored to platform objects (properties, inquiries). Contact management, chat history, and unread-count APIs complete the system.
-
-*Admin Dashboard Backend* — Separate authenticated surface with RBAC-controlled access. Covers user management, property and content administration, and reporting APIs. Permission checks enforced at the service layer across all admin routes; the admin dashboard runs at a distinct subdomain with its own session boundary.
-
-*Supporting Backend Systems* — PDF generation for client reports and consultation documents. Excel import pipeline with server-side row-level validation and domain rule enforcement via Laravel Excel, returning structured per-row error reporting. Multi-language content APIs expose AR/EN data without duplicating underlying data structures.
-
-*Documentation* — Full Swagger/OpenAPI coverage across all API surfaces, including dedicated documentation for the AI session endpoints at [api.p-adviser.com/docs](https://api.p-adviser.com/docs).
-
-**Outcome** — Production platform at [p-adviser.com](https://p-adviser.com/en) with a live admin dashboard at [dashboard.p-adviser.com](https://dashboard.p-adviser.com/). API documentation published and stable for frontend integration.
-
-</details>
-
----
-
-<details>
-<summary><b>Case Study — BWW Store E-Commerce Platform</b></summary>
-
-<br/>
-
-**Problem** — A multi-vendor e-commerce platform required backend infrastructure beyond standard catalog and checkout: an affiliate attribution and payout system, auditable financial approval workflows, operational logistics visibility, and analytics across multiple business dimensions — each domain with its own access control, reporting, and export requirements.
-
-**Architecture** — Modular Laravel backend with explicit domain boundaries: commerce, affiliate, finance, operations, and analytics each maintain their own service layer. Financial state transitions are modeled as explicit, auditable workflows rather than direct mutations. Approval chains are configurable and logged at every state change, providing a complete audit trail without requiring ad-hoc reconstruction.
-
-**Engineering Work**
-
-*Affiliate System* — Hierarchical affiliate structure with a commission calculation engine that runs per sale. Commission lifecycle tracked from pending through approval to payout. Payout workflows include approval gates before disbursement. Full commission audit trail maintained per transaction for reconciliation purposes.
-
-*Financial Workflows* — Balance requests, refunds, and ledger adjustments routed through multi-stage approval pipelines. Every state transition is logged with actor, timestamp, and reason. Monthly financial closing process enforces consistency checks before period lock. Reconciliation framework for cross-system financial alignment and discrepancy detection.
-
-*Operations* — Shipment SLA tracking against committed delivery windows with breach detection. Courier reconciliation covering cross-carrier settlements and discrepancy handling. COD lifecycle tracking across collection and remittance states. Operations dashboard APIs aggregating fleet and fulfillment metrics for the operations team.
-
-*Analytics Suite* — Four intelligence dashboards: Orders (GMV, conversion, status breakdowns), Product 360 (performance, return rates, margin analysis), User Intelligence (behavior and value segmentation), and Vendor Intelligence (performance scoring, SLA adherence). All dashboards expose filterable, exportable API endpoints.
-
-*Vendor Governance* — Vendor offer management with pricing protection guardrails. Margin calculations validated server-side before offer activation. Approval engine for price changes and promotions, blocking offers that violate configured margin thresholds.
-
-*Admin Platform* — Dashboard APIs, reporting endpoints, and export pipelines spanning all business domains. Expense management with recurring expense scheduling integrated into the monthly financial closing workflow.
-
-**Outcome** — Production admin platform at [admin-dev-v1.bww-store.com](https://admin-dev-v1.bww-store.com/en). Live storefront at [bww-tech.bww-store.com](https://bww-tech.bww-store.com/).
-
-</details>
+| Domain | Implementation |
+| --- | --- |
+| **AI / LLM Integration** | Session-scoped OpenAI, SSE streaming, provider-swappable service boundary — P-Adviser |
+| **Real-time Systems** | Pusher private chat — per-participant read-state, attachments, entity-linked threads — P-Adviser |
+| **Financial Workflows** | Multi-stage approval pipelines, audited state transitions, monthly period closing — BWW Store |
+| **Affiliate Engine** | Hierarchical commission calculation, pending → approved → paid lifecycle, approval-gated payouts — BWW Store |
+| **Operations & Logistics** | SLA breach detection, courier reconciliation, COD lifecycle tracking — Exspeeds · BWW Store |
+| **Analytics APIs** | Four-domain intelligence suite (orders, products, users, vendors) — filterable, exportable — BWW Store |
+| **Multi-tenant RBAC** | Service-layer authorization, tenant-scoped repository constraints — Exspeeds · P-Adviser |
+| **i18n API Design** | AR/EN bilingual via localized model attributes — uniform query logic across locales — P-Adviser |
+| **Data Import** | Server-side row-level validation, structured per-row error reporting — P-Adviser |
+| **Open Source** | `laravel-base` — architecture-enforcing scaffolding, OpenAPI by default, Laravel 10–13 |
 
 ---
 
@@ -292,39 +250,7 @@ php artisan make:module Product
 
 ---
 
-## Selected Engineering Contributions
-
-| Domain | Contribution |
-| --- | --- |
-| **API Design** | Versioned, OpenAPI-documented REST APIs with a consistent response envelope; contract-stable across active product iterations on multiple production platforms |
-| **AI Integration** | Session-scoped OpenAI assistant with SSE streaming; context isolated at the service boundary so provider changes require no modification to consumers |
-| **Real-time Systems** | Pusher-backed private chat: message delivery, per-participant read-state, attachment support, entity-linked threads, contact management, and unread-count APIs |
-| **Financial Systems** | Multi-stage approval workflows for balance requests, refunds, and adjustments; audit-logged state transitions; monthly financial closing with consistency enforcement |
-| **Affiliate Systems** | Hierarchical commission engine with full lifecycle tracking (pending → approved → paid), approval-gated payout workflows, and per-transaction audit trail |
-| **Operations** | Shipment SLA breach detection, courier reconciliation, COD lifecycle tracking, and aggregated operations dashboard APIs |
-| **Analytics** | Intelligence dashboards across orders, products, users, and vendors — filterable and exportable API surfaces per business dimension |
-| **RBAC** | Role-based access enforced at the service layer across multi-tenant and multi-role platforms; permission checks never delegated to route middleware alone |
-| **Documentation** | Swagger/OpenAPI coverage across all public API surfaces; auto-generated per module via `laravel-base` scaffolding |
-| **Open Source** | [`laravel-base`](https://github.com/MuhammedMSalama/LaravelBase) — published on Packagist, supporting Laravel 10–13, PHP 8.1+ |
-
----
-
 ## Tech Stack
-
-### Backend
-`PHP 8+` `Laravel 10–13` `REST API Design` `Laravel Sanctum` `OAuth2` `Pusher` `Laravel Excel`
-
-### Architecture
-`Repository–Service` `SOLID` `Clean Architecture` `DTO` `API Versioning` `RBAC`
-
-### Data
-`MySQL` `PostgreSQL` `Redis` `Query Optimization` `Queues`
-
-### Testing
-`PHPUnit` `Pest`
-
-### DevOps & Tooling
-`Docker` `Git` `GitHub Actions` `Swagger / OpenAPI`
 
 <p>
   <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" />
@@ -339,6 +265,8 @@ php artisan make:module Product
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
   <img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black" />
 </p>
+
+`Sanctum / OAuth2` &nbsp;·&nbsp; `Pusher` &nbsp;·&nbsp; `SSE` &nbsp;·&nbsp; `Queues` &nbsp;·&nbsp; `Repository–Service` &nbsp;·&nbsp; `DTO` &nbsp;·&nbsp; `API Versioning` &nbsp;·&nbsp; `RBAC` &nbsp;·&nbsp; `PHPUnit` &nbsp;·&nbsp; `Pest` &nbsp;·&nbsp; `Laravel Excel`
 
 ---
 
