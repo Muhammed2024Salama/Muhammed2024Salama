@@ -272,7 +272,7 @@ php artisan make:module Product
 
 <div align="center">
 
-Available for backend consulting, freelance collaborations, and open-source contributions.
+Available for freelance collaborations, and open-source contributions.
 
 <p>
   <a href="mailto:devmuhammedsalama@gmail.com">
